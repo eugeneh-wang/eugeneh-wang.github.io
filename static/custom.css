@@ -1,0 +1,213 @@
+/* TANA VARS ====================================================================== */
+:root {
+	--fontStackNormalVariable: "InterVariable", system-ui;
+	--fontStackNormal: "InterVariable", "Inter", system-ui;
+	--fontStackMonospace: "Rec Mono Semicasual", ui-monospace, monospace;
+	--fontWeightHeading: var(--titleWeight);
+	--size300: 0.875rem;
+	/* 		--defaultLineHeight: 1.5; */
+}
+
+html.isLightMode {
+	/* 		--inlineCode: var(--colorEditorText); */
+	--colorInlineElementBackground: var(--colorGray150);
+	/* 		--colorInlineElementText: var(--colorGray550); */
+	--colorBulletDefaultFill: var(--colorGray450);
+	--colorBulletDefaultOutline: var(--colorGray225);
+}
+
+html.isDarkMode {
+	/* 		--inlineCode: var(--colorEditorText); */
+	--colorPanelBackground: var(--colorGray850);
+	--colorBulletDefaultFill: var(--colorGray500);
+	--colorBulletDefaultOutline: var(--colorGray675);
+	--colorEditorText: var(--colorGray350);
+}
+
+/* CUSTOM VARS ==================================================================== */
+:root {
+	--remSize: 15px;
+	--textFamily: var(--fontStackNormalVariable), var(--fontStackNormal);
+
+	--titleSize: var(--size600);
+	--monoSize: var(--size300);
+	--textWeight: 420;
+	--mediumWeight: 500;
+	--strongWeight: 640;
+	--titleWeight: 540;
+
+	--fontWeightHeading: var(--titleWeight);
+	--fontWeightHeadingInlineRef: var(--titleWeight);
+	--fontFeatureSettings: "calt", "kern", "liga", "zero", "ss03";
+	--color-text-comment: var(--colorUITextMuted);
+}
+
+/* Global ==================================================================== */
+html,
+body {
+	font-size: var(--remSize);
+	font-optical-sizing: auto;
+	font-weight: var(--textWeight);
+	font-feature-settings: var(--fontFeatureSettings);
+	text-rendering: optimizeLegibility;
+}
+
+strong,
+b {
+	font-weight: var(--strongWeight);
+}
+
+del,
+strike {
+	color: var(--colorUITextMuted);
+}
+
+.editable code {
+	font-size: var(--monoSize);
+}
+
+/* HEADING STYLE - WILL BREAK */
+.NodeAsListElement-module_isOutlinerSection__Q0ZWR:has(
+		.NodeAsListElement-module_sectionHeading__Utf6w
+	)
+	.NodeAsListElement-module_sectionHeading__Utf6w {
+	font-size: var(--size500) !important;
+}
+
+/* Plain List Item — fix extra space created between node content and description on expand */
+[class^="PlainListItem-module_expanded"] {
+	gap: 0;
+}
+
+/* Panel Header */
+/* Breadcrumbs */
+[class^="Breadcrumbs-module_el"] {
+	color: var(--colorUITextMuted);
+}
+
+[class^="Breadcrumbs-module_el"] button:hover {
+	color: var(--colorButtonNeutralTextHover);
+}
+
+/* Daily Node Date Navigator */
+[class^="DateNavigator-module_today"] {
+	font-weight: var(--strongWeight) !important;
+}
+
+/* Panel Title */
+h1,
+h1[class^="NodePanelHeaderTitle-module_heading"] {
+	font-size: var(--titleSize);
+	font-weight: var(--titleWeight);
+	letter-spacing: -0.01em;
+}
+
+h1 b {
+	font-weight: var(--strongWeight);
+}
+
+h1 .inlinerefnode,
+h1 .inlinerefuser,
+h1 .inlinerefdate,
+h1 .inlinerefdate[tabindex],
+h1 .wrapEditableAndMenu .titleFields {
+	font-weight: inherit;
+}
+
+.wrapEditableAndMenu .titleFields {
+	margin-left: 0;
+	margin-right: 0;
+}
+
+/* Supertag buttons */
+[class^="TemplateTag-module_tagAvatar"] {
+	display: none;
+}
+
+/* Individual Supertag Styles ====================================================================  */
+[data-tag-name="journal"] {
+	color: var(--color-text-comment);
+}
+
+/* supertag template fields */
+/* 	[class ^= "TupleListItem-module_tupleListItem"] {
+		font-size: var(--size300);
+	} */
+
+/* Day node date navigation buttons */
+.DateNavigator-module_today__SubVA {
+	font-weight: var(--mediumWeight) !important;
+}
+
+/* References Section, at panel bottom  */
+[class^="RelatedContent-module_refs"]
+	span[class^="ExpandableSection-module_title"] {
+	margin-left: 1.5rem;
+}
+
+/* Reference Count */
+button[aria-label^="This node is referenced"] {
+	font-family: var(--fontStackMonospace);
+	font-feature-settings: "tnum";
+}
+
+button[aria-label^="This node is referenced"][class*="Button-module_neutral"] {
+	color: var(--colorUITextDisabled);
+}
+
+button[aria-label^="This node is referenced"]:hover,
+button[aria-label^="This node is referenced"]:active,
+button[aria-label^="This node is referenced"][class*="Button-module_active"] {
+	--colorButtonText: var(--colorButtonActiveText);
+	--colorButtonStroke: var(--colorButtonActiveStroke);
+	color: var(--colorButtonText);
+	border-color: var(--colorButtonStroke);
+}
+
+button[aria-label^="This node is referenced"][class*="Button-module_smaller"] {
+	padding: 0.25em 0.4em;
+}
+
+/* Reference Count -> Reference Section Expanded */
+/* 	li[class ^= "ReferenceSection-module_isExpanded"] header {
+		margin: 0;
+	} */
+
+/* Inline Reference //////////////////////////////////////////////*/
+/* Remove extra margin/padding around inline refs */
+.editable .disappearingCaret {
+	width: 0;
+}
+
+.inlineelement {
+	padding: 0;
+	margin: 0;
+}
+
+button,
+span.inlinerefdate {
+	font-feature-settings: inherit;
+	/* color: var(--colorTextLocked); */
+}
+
+/* URL Nodes */
+/* Hide appended external link icon	for URL nodes */
+a[class^="ListCtxEditable-module_refUrl"]:after {
+	display: none !important;
+}
+
+.bullet.isUrl {
+	color: var(--bulletColor1LinkText);
+	/*  		opacity: 0.75; */
+}
+
+/* Node description */
+.listDescription .editable {
+	line-height: var(--compactLineHeight);
+}
+
+/* Code Block */
+[class^="codeBlockItem-module_el"]
+	[class^="codeBlockItem-module_codeBlockItem"] {
+	font-family: var(--fontStackMonospace);
+}
