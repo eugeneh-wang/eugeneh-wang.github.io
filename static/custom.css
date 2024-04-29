@@ -1,4 +1,12 @@
 /* TANA VARS ====================================================================== */
+body {
+	-webkit-app-region: drag;
+}
+
+button {
+	-webkit-app-region: no-drag;
+}
+
 :root {
 	--fontStackNormalVariable: "InterVariable", system-ui;
 	--fontStackNormal: "InterVariable", "Inter", system-ui;
