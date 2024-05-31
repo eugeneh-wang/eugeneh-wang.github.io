@@ -110,6 +110,12 @@ h1[class^="NodePanelHeaderTitle-module_heading"] {
 	letter-spacing: -0.01em;
 }
 
+/* Related Content Panel Title */
+h1[class^="WidgetPanel-module_panelHeading"],
+h1.WidgetPanel-module_panelHeading__LbAl8 {
+	font-size: var(--size400);
+}
+
 h1 b {
 	font-weight: var(--strongWeight);
 }
