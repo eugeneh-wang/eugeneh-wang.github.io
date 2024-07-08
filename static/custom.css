@@ -37,7 +37,7 @@ html.isDarkMode {
 	--remSize: 15px;
 	--textFamily: var(--fontStackNormalVariable), var(--fontStackNormal);
 
-	--titleSize: var(--size500);
+	--titleSize: var(--size600);
 	--monoSize: var(--size300);
 	--textWeight: 420;
 	--mediumWeight: 500;
