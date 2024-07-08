@@ -60,6 +60,10 @@ body {
 	text-rendering: optimizeLegibility;
 }
 
+h1 {
+	font-weight: var(--titleWeight);
+}
+
 strong,
 b {
 	font-weight: var(--strongWeight);
