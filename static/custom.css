@@ -37,7 +37,7 @@ html.isDarkMode {
 	--remSize: 15px;
 	--textFamily: var(--fontStackNormalVariable), var(--fontStackNormal);
 
-	--titleSize: var(--size500);
+	--titleSize: var(--size600);
 	--monoSize: var(--size350);
 	--textWeight: 420;
 	--mediumWeight: 500;
@@ -111,7 +111,6 @@ h1,
 h1[class^="NodePanelHeaderTitle-module_heading"] {
 	font-size: var(--titleSize);
 	font-weight: var(--titleWeight);
-	letter-spacing: -0.01em;
 }
 
 /* Related Content Panel Title */
