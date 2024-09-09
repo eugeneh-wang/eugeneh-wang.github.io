@@ -142,10 +142,15 @@ h1 .wrapEditableAndMenu .titleFields {
 	display: none;
 }
 
-/* Individual Supertag Styles ====================================================================  */
-[data-tag-name="journal"] {
-	color: var(--color-text-comment);
+/* view options button border */
+[class^="Button-module_soft"] {
+	border: none !important;
 }
+
+/* Individual Supertag Styles ====================================================================  */
+/* [data-tag-name="journal"] {
+	color: var(--color-text-comment);
+} */
 
 /* supertag template fields */
 /* 	[class ^= "TupleListItem-module_tupleListItem"] {
