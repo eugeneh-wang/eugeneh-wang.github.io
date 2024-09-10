@@ -60,10 +60,6 @@ body {
 	text-rendering: optimizeLegibility;
 }
 
-h1 {
-	font-weight: var(--titleWeight);
-}
-
 strong,
 b {
 	font-weight: var(--strongWeight);
@@ -109,7 +105,7 @@ strike {
 /* Panel Title */
 h1,
 h1[class^="NodePanelHeaderTitle-module_heading"] {
-	font-size: var(--titleSize) !important;
+	font-size: var(--titleSize);
 	font-weight: var(--titleWeight) !important;
 }
 
