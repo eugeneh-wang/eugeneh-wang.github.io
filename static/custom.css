@@ -109,8 +109,8 @@ strike {
 /* Panel Title */
 h1,
 h1[class^="NodePanelHeaderTitle-module_heading"] {
-	font-size: var(--titleSize);
-	font-weight: var(--titleWeight);
+	font-size: var(--titleSize) !important;
+	font-weight: var(--titleWeight) !important;
 }
 
 /* Related Content Panel Title */
