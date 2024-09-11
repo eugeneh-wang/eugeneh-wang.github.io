@@ -17,19 +17,18 @@ button {
 }
 
 html.isLightMode {
-	/* 		--inlineCode: var(--colorEditorText); */
-	--colorInlineElementBackground: var(--colorGray150);
+	--inlineCode: var(--colorEditorText);
+	--colorInlineElementBackground: var(--colorGray150) !important;
 	/* 		--colorInlineElementText: var(--colorGray550); */
-	--colorBulletDefaultFill: var(--colorGray450);
-	--colorBulletDefaultOutline: var(--colorGray225);
+	--colorBulletDefaultFill: var(--colorGray450) !important;
+	--colorBulletDefaultOutline: var(--colorGray225) !important;
 }
 
 html.isDarkMode {
-	/* 		--inlineCode: var(--colorEditorText); */
-	--colorPanelBackground: var(--colorGray850);
-	--colorBulletDefaultFill: var(--colorGray500);
-	--colorBulletDefaultOutline: var(--colorGray675);
-	--colorEditorText: var(--colorGray350);
+	--inlineCode: var(--colorEditorText);
+	--colorPanelBackground: var(--colorGray850) !important;
+	--colorBulletDefaultFill: var(--colorGray500) !important;
+	--colorBulletDefaultOutline: var(--colorGray675) !important;
 }
 
 /* CUSTOM VARS ==================================================================== */
