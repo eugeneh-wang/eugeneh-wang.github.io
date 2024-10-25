@@ -74,12 +74,12 @@ strike {
 }
 
 /* HEADING STYLE - WILL BREAK */
-.NodeAsListElement-module_isOutlinerSection__Q0ZWR:has(
+/* .NodeAsListElement-module_isOutlinerSection__Q0ZWR:has(
 		.NodeAsListElement-module_sectionHeading__Utf6w
 	)
 	.NodeAsListElement-module_sectionHeading__Utf6w {
 	font-size: var(--size500) !important;
-}
+} */
 
 /* Plain List Item — fix extra space created between node content and description on expand */
 [class^="PlainListItem-module_expanded"] {
@@ -88,9 +88,9 @@ strike {
 
 /* PANEL */
 
-/* Panel Height Fix /////////////////////////////*/
+/* Panel Height Fix */
 [class^="EditorPage-module_el"] {
-	--scrollPastBottom: 0;
+	--scrollPastBottom: 0 !important;
 }
 
 /* Panel Header */
