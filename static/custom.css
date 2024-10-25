@@ -86,6 +86,13 @@ strike {
 	gap: 0;
 }
 
+/* PANEL */
+
+/* Panel Height Fix /////////////////////////////*/
+[class^="EditorPage-module_el"] {
+	--scrollPastBottom: 0;
+}
+
 /* Panel Header */
 /* Breadcrumbs */
 [class^="Breadcrumbs-module_el"] {
