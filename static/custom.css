@@ -41,11 +41,11 @@ html.isDarkMode {
 	--textWeight: 420;
 	--mediumWeight: 500;
 	--strongWeight: 640;
-	--titleWeight: 600;
+	--titleWeight: 540;
 
 	--fontWeightHeading: var(--titleWeight);
 	--fontWeightHeadingInlineRef: var(--titleWeight);
-	--fontFeatureSettings: "calt", "kern", "liga", "zero", "ss03";
+	--fontFeatureSettings: "calt", "case", "kern", "liga", "zero", "ss03";
 	--color-text-comment: var(--colorUITextMuted);
 }
 
@@ -113,6 +113,7 @@ h1,
 h1[class^="NodePanelHeaderTitle-module_heading"] {
 	font-size: var(--titleSize);
 	font-weight: var(--titleWeight) !important;
+	font-variation-settings: "opsz" var(--titleSize);
 }
 
 /* Related Content Panel Title */
