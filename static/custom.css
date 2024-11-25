@@ -29,7 +29,7 @@ button {
 }
 
 html.isLightMode {
-	--inlineCode: var(--colorEditorText);
+	/* --inlineCode: var(--colorEditorText); */
 	--colorInlineElementBackground: var(--colorGray150) !important;
 	/* 		--colorInlineElementText: var(--colorGray550); */
 	--colorBulletDefaultFill: var(--colorGray450) !important;
@@ -37,7 +37,7 @@ html.isLightMode {
 }
 
 html.isDarkMode {
-	--inlineCode: var(--colorEditorText);
+	/* --inlineCode: var(--colorEditorText); */
 	--colorPanelBackground: var(--colorGray850) !important;
 	--colorBulletDefaultFill: var(--colorGray500) !important;
 	--colorBulletDefaultOutline: var(--colorGray675) !important;
@@ -57,7 +57,7 @@ html.isDarkMode {
 
 	--fontWeightHeading: var(--titleWeight);
 	--fontWeightHeadingInlineRef: var(--titleWeight);
-	--fontFeatureSettings: "calt", "case", "kern", "liga", "zero", "ss03";
+	--fontFeatureSettings: "calt", "kern", "liga", "zero", "ss03";
 	--color-text-comment: var(--colorUITextMuted);
 }
 
