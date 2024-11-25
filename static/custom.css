@@ -113,7 +113,7 @@ h1,
 h1[class^="NodePanelHeaderTitle-module_heading"] {
 	font-size: var(--titleSize);
 	font-weight: var(--titleWeight) !important;
-	font-variation-settings: "opsz" var(--titleSize) !important;
+	letter-spacing: -0.015em;
 }
 
 /* Related Content Panel Title */
