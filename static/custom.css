@@ -12,7 +12,7 @@ button {
 	--fontStackNormal: "InterVariable", "Inter", system-ui;
 	--fontStackMonospace: "Rec Mono Semicasual", ui-monospace, monospace;
 	--fontWeightHeading: var(--titleWeight);
-	--size300: 0.875rem;
+	/* --size300: 0.875rem; */
 	/* 		--defaultLineHeight: 1.5; */
 }
 
@@ -36,12 +36,12 @@ html.isDarkMode {
 	--remSize: 15px;
 	--textFamily: var(--fontStackNormalVariable), var(--fontStackNormal);
 
-	--titleSize: var(--size600);
+	--titleSize: var(--size500);
 	--monoSize: var(--size350);
 	--textWeight: 420;
 	--mediumWeight: 500;
 	--strongWeight: 640;
-	--titleWeight: 540;
+	--titleWeight: 600;
 
 	--fontWeightHeading: var(--titleWeight);
 	--fontWeightHeadingInlineRef: var(--titleWeight);
