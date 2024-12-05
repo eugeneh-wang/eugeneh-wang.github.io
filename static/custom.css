@@ -73,7 +73,7 @@ body {
 
 strong,
 b {
-	font-weight: var(--strongWeight);
+	font-weight: var(--strongWeight) !important;
 }
 
 del,
