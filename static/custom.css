@@ -52,7 +52,7 @@ html.isDarkMode {
 	--monoSize: var(--size350);
 	--textWeight: 420;
 	--mediumWeight: 500;
-	--strongWeight: 640;
+	--strongWeight: 600;
 	--titleWeight: 540;
 
 	--fontWeightHeading: var(--titleWeight);
