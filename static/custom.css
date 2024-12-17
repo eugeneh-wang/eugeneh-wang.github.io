@@ -82,7 +82,7 @@ strike {
 }
 
 .editable code {
-	font-size: var(--monoSize);
+	font-size: var(--monoSize) !important;
 }
 
 /* HEADING STYLE - WILL BREAK */
