@@ -1,18 +1,14 @@
-/* TANA VARS ====================================================================== */
-/* body {
-	-webkit-app-region: drag;
+/* REMOVE THE GAP AT THE TOP OF THE APP THAT'S DESIGNED FOR THE TITLE BAR */
+[class*="ElectronTitleBar-module_titlebar"] {
+	display: none !important;
 }
 
-button {
-	-webkit-app-region: no-drag;
-} */
-
-/* MAKE THE TOP NAV BAR DRAGGABLE (via @READY) */
+/* MAKE THE TOP NAV BAR DRAGGABLE */
 [data-panel-toolbar="true"] {
 	-webkit-app-region: drag !important;
 }
 
-/* MAKE SPECIFIC ELEMENTS IN THE DRAGGABLE AREA NON-DRAGGABLE (via @READY) */
+/* MAKE SPECIFIC ELEMENTS IN THE DRAGGABLE AREA NON-DRAGGABLE */
 [data-panel-toolbar="true"] button,
 [data-panel-toolbar="true"] input,
 [data-panel-toolbar="true"] [role="button"] {
@@ -212,14 +208,14 @@ button[aria-label^="This node is referenced"][class*="Button-module_smaller"] {
 
 /* Inline Reference //////////////////////////////////////////////*/
 /* Remove extra margin/padding around inline refs */
-.editable .disappearingCaret {
+/* .editable .disappearingCaret {
 	width: 0;
-}
+} */
 
-.inlineelement {
+/* .inlineelement {
 	padding: 0;
 	margin: 0;
-}
+} */
 
 button,
 span.inlinerefdate {
