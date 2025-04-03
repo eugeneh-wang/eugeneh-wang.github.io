@@ -1,20 +1,3 @@
-/* REMOVE THE GAP AT THE TOP OF THE APP THAT'S DESIGNED FOR THE TITLE BAR */
-[class*="ElectronTitleBar-module_titlebar"] {
-	display: none !important;
-}
-
-/* MAKE THE TOP NAV BAR DRAGGABLE */
-[data-panel-toolbar="true"] {
-	-webkit-app-region: drag !important;
-}
-
-/* MAKE SPECIFIC ELEMENTS IN THE DRAGGABLE AREA NON-DRAGGABLE */
-[data-panel-toolbar="true"] button,
-[data-panel-toolbar="true"] input,
-[data-panel-toolbar="true"] [role="button"] {
-	-webkit-app-region: no-drag !important;
-}
-
 :root {
 	--fontStackNormalVariable: "InterVariable", system-ui;
 	--fontStackNormal: "InterVariable", "Inter", system-ui;
@@ -58,6 +41,23 @@ html.isDarkMode {
 }
 
 /* Global ==================================================================== */
+
+div[class^="ElectronTitleBar-module_titlebar"] {
+	display: none !important;
+}
+
+/* MAKE THE TOP NAV BAR DRAGGABLE */
+[data-panel-toolbar="true"] {
+	-webkit-app-region: drag !important;
+}
+
+/* MAKE SPECIFIC ELEMENTS IN THE DRAGGABLE AREA NON-DRAGGABLE */
+[data-panel-toolbar="true"] button,
+[data-panel-toolbar="true"] input,
+[data-panel-toolbar="true"] [role="button"] {
+	-webkit-app-region: no-drag !important;
+}
+
 html,
 body {
 	font-size: var(--remSize);
