@@ -1,10 +1,9 @@
+/* TANA VARS =============================================================== */
 :root {
 	--fontStackNormalVariable: "InterVariable", system-ui;
 	--fontStackNormal: "InterVariable", "Inter", system-ui;
 	--fontStackMonospace: "Rec Mono Semicasual", ui-monospace, monospace;
 	--fontWeightHeading: var(--titleWeight);
-	/* --size300: 0.875rem; */
-	/* 		--defaultLineHeight: 1.5; */
 }
 
 html.isLightMode {
@@ -22,7 +21,7 @@ html.isDarkMode {
 	--colorBulletDefaultOutline: var(--colorGray675) !important;
 }
 
-/* CUSTOM VARS ==================================================================== */
+/* CUSTOM VARS ============================================================= */
 :root {
 	--remSize: 15px;
 	--textFamily: var(--fontStackNormalVariable), var(--fontStackNormal);
@@ -38,12 +37,13 @@ html.isDarkMode {
 	--fontWeightHeadingInlineRef: var(--titleWeight);
 	--fontFeatureSettings: "calt", "kern", "liga", "zero", "ss03";
 	--color-text-comment: var(--colorUITextMuted);
+	--titleBarHeight: 1rem;
 }
 
 /* Global ==================================================================== */
 
 div[class^="ElectronTitleBar-module_titlebar"] {
-	display: none !important;
+	height: var(--titleBarHeight);
 }
 
 /* MAKE THE TOP NAV BAR DRAGGABLE */
