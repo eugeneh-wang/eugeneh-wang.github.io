@@ -5,7 +5,7 @@ html {
 	--fontStackNormal: "InterVariable", "Inter", system-ui;
 	--fontStackMonospace: "Rec Mono Semicasual", ui-monospace, monospace;
 	--fontWeightHeading: var(--titleWeight);
-	--titleBarHeight: 0;
+	--titleBarHeight: 0.25em;
 }
 
 html.isLightMode {
