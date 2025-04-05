@@ -1,9 +1,11 @@
 /* TANA VARS =============================================================== */
-:root {
+:root,
+html {
 	--fontStackNormalVariable: "InterVariable", system-ui;
 	--fontStackNormal: "InterVariable", "Inter", system-ui;
 	--fontStackMonospace: "Rec Mono Semicasual", ui-monospace, monospace;
 	--fontWeightHeading: var(--titleWeight);
+	--titleBarHeight: 1rem;
 }
 
 html.isLightMode {
@@ -37,7 +39,6 @@ html.isDarkMode {
 	--fontWeightHeadingInlineRef: var(--titleWeight);
 	--fontFeatureSettings: "calt", "kern", "liga", "zero", "ss03";
 	--color-text-comment: var(--colorUITextMuted);
-	--titleBarHeight: 1rem;
 }
 
 /* Global ==================================================================== */
