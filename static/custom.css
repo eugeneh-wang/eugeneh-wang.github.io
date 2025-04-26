@@ -203,11 +203,11 @@ button[aria-label^="This node is referenced"][class*="Button-module_active"] {
 } */
 
 /* Node reference with reference count, normalize margin-right for collapsed vs. expanded state */
-[data-role="embed"] .editable,
+/* [data-role="embed"] .editable,
 [data-role="node-as-card-content"] .editable,
 .wrapEditableAndMenu:has([data-role="template-list"]) .editable {
 	margin-right: 0 !important;
-}
+} */
 
 /* Reference Count -> Reference Section Expanded */
 /* 	li[class ^= "ReferenceSection-module_isExpanded"] header {
