@@ -198,15 +198,15 @@ button[aria-label^="This node is referenced"][class*="Button-module_active"] {
 	border-color: var(--colorButtonStroke);
 }
 
-button[aria-label^="This node is referenced"][class*="Button-module_smaller"] {
+/* button[aria-label^="This node is referenced"][class*="Button-module_smaller"] {
 	padding: 0.25em 0.4em;
-}
+} */
 
 /* Node reference with reference count, normalize margin-right for collapsed vs. expanded state */
 [data-role="embed"] .editable,
 [data-role="node-as-card-content"] .editable,
 .wrapEditableAndMenu:has([data-role="template-list"]) .editable {
-	margin-right: 0;
+	margin-right: 0 !important;
 }
 
 /* Reference Count -> Reference Section Expanded */
