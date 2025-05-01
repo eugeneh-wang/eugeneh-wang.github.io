@@ -27,9 +27,9 @@ html {
 /* APP CHROME, FRAMELESS WINDOW, DRAGGABLE ================================== */
 
 /* Title bar fix */
-/* div[class^="ElectronTitleBar-module_titlebar"] {
+div[class^="AppTitleBar-module_titlebar"] {
 	height: var(--titleBarHeight);
-} */
+}
 
 /* Make top nav bar draggable */
 /* [data-panel-toolbar="true"] {
