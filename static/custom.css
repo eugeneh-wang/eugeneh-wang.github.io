@@ -1,16 +1,14 @@
 /* TANA VARS =============================================================== */
-
 :root,
 html {
 	--fontStackNormalVariable: "InterVariable", system-ui;
 	--fontStackNormal: "InterVariable", "Inter", system-ui;
 	--fontStackMonospace: "Rec Mono Semicasual", ui-monospace, monospace;
 	--fontWeightHeading: var(--titleWeight);
-	--titleBarHeight: 0.25em;
+	/* --titleBarHeight: 0.25em; */
 }
 
 /* CUSTOM VARS ============================================================= */
-
 :root {
 	--remSize: 15px;
 	--textFamily: var(--fontStackNormalVariable), var(--fontStackNormal);
@@ -29,21 +27,21 @@ html {
 /* APP CHROME, FRAMELESS WINDOW, DRAGGABLE ================================== */
 
 /* Title bar fix */
-div[class^="ElectronTitleBar-module_titlebar"] {
+/* div[class^="ElectronTitleBar-module_titlebar"] {
 	height: var(--titleBarHeight);
-}
+} */
 
 /* Make top nav bar draggable */
-[data-panel-toolbar="true"] {
+/* [data-panel-toolbar="true"] {
 	-webkit-app-region: drag !important;
-}
+} */
 
 /* Make some nav bar elements non-draggable */
-[data-panel-toolbar="true"] button,
+/* [data-panel-toolbar="true"] button,
 [data-panel-toolbar="true"] input,
 [data-panel-toolbar="true"] [role="button"] {
 	-webkit-app-region: no-drag !important;
-}
+} */
 
 /* GLOBAL =================================================================== */
 
