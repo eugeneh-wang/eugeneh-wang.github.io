@@ -50,9 +50,9 @@ strike {
 
 /* PANEL ==================================================================== */
 /* Panel Height Fix */
-[class^="EditorPage-module_el"] {
+/* [class^="EditorPage-module_el"] {
 	--scrollPastBottom: 0 !important;
-}
+} */
 
 /* Panel Title */
 h1,
@@ -64,10 +64,10 @@ h1[class^="NodePanelHeaderTitle-module_heading"] {
 
 /* Related Content Panel Title */
 /* ⚠️ ⚠️ ⚠️ ⚠️ NEEDS FIX NEEDS FIX NEEDS FIX NEEDS FIX NEEDS FIX ⚠️ ⚠️ ⚠️ ⚠️ */
-h1[class^="WidgetPanel-module_panelHeading"],
+/* h1[class^="WidgetPanel-module_panelHeading"],
 h1.WidgetPanel-module_panelHeading__LbAl8 {
 	font-size: var(--size400);
-}
+} */
 /* ⚠️ ⚠️ ⚠️ ⚠️ NEEDS FIX NEEDS FIX NEEDS FIX NEEDS FIX NEEDS FIX ⚠️ ⚠️ ⚠️ ⚠️ */
 
 h1 .inlinerefnode,
